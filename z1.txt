@@ -1,5 +1,7 @@
+git config --list
 git version 2.43.0
 
+git config --list
 user.name=Matija Jamnik
 user.email=jamnik.matija@gmail.com
 core.repositoryformatversion=0
@@ -9,6 +11,7 @@ core.logallrefupdates=true
 remote.origin.url=https://github.com/Jinks004/z1_dev224.git
 remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
 
+git log
 Author: Matija Jamnik <jamnik.matija@gmail.com>
 Date:   Tue Oct 27 09:34:28 2026 +0000
 
@@ -17,6 +20,7 @@ Date:   Tue Oct 27 09:34:28 2026 +0000
 git log --oneline
 7fd56f4 (HEAD -> main, origin/main) 1. Z1 spajanje s Github-om
 
+git remote show origin
 * remote origin
   Fetch URL: https://github.com/Jinks004/z1_dev224.git
   Push  URL: https://github.com/Jinks004/z1_dev224.git
@@ -26,5 +30,71 @@ git log --oneline
   Local ref configured for 'git push':
     main pushes to main (up to date)
 
+git remote -v 
 origin  https://github.com/Jinks004/z1_dev224.git (fetch)
 origin  https://github.com/Jinks004/z1_dev224.git (push)
+
+git rev-parse HEAD
+64d85526b92cbbc1dd403561ce69916c4d24d5d5
+
+git log -1
+commit 64d85526b92cbbc1dd403561ce69916c4d24d5d5 (HEAD -> main)
+Author: Matija Jamnik <jamnik.matija@gmail.com>
+Date:   Tue Oct 27 09:47:28 2026 +0000
+
+    3. dodavanje još u datetime.log
+
+git rev-parse origin/main
+7fd56f4a04b2c831063e99ccd81e3f1bb1535df1
+
+git diff HEAD origin/main
+diff --git a/datetime.log b/datetime.log
+index 0186b5d..414f277 100644
+--- a/datetime.log
++++ b/datetime.log
+@@ -3,5 +3,3 @@
+ 2026-10-27 09:26:03
+ 2026-10-27 09:26:04
+ 2026-10-27 09:26:05
+-2026-10-27 09:47:16
+-2026-10-27 09:47:17
+diff --git a/z1.txt b/z1.txt
+deleted file mode 100644
+index 379a49d..0000000
+--- a/z1.txt
++++ /dev/null
+@@ -1,30 +0,0 @@
+-git version 2.43.0
+-
+-user.name=Matija Jamnik
+-user.email=jamnik.matija@gmail.com
+-core.repositoryformatversion=0
+-core.filemode=true
+-core.bare=false
+-core.logallrefupdates=true
+-remote.origin.url=https://github.com/Jinks004/z1_dev224.git
+-remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+-
+-Author: Matija Jamnik <jamnik.matija@gmail.com>
+-Date:   Tue Oct 27 09:34:28 2026 +0000
+-
+-    1. Z1 spajanje s Github-om
+-
+-git log --oneline
+-7fd56f4 (HEAD -> main, origin/main) 1. Z1 spajanje s Github-om
+-
+-* remote origin
+-  Fetch URL: https://github.com/Jinks004/z1_dev224.git
+-  Push  URL: https://github.com/Jinks004/z1_dev224.git
+-  HEAD branch: main
+-  Remote branch:
+-    main tracked
+-  Local ref configured for 'git push':
+-    main pushes to main (up to date)
+-
+-origin  https://github.com/Jinks004/z1_dev224.git (fetch)
+-origin  https://github.com/Jinks004/z1_dev224.git (push)
+\ No newline at end of file
+ ESCOD
+
+ 
