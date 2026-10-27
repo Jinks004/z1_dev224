@@ -1,0 +1,30 @@
+git version 2.43.0
+
+user.name=Matija Jamnik
+user.email=jamnik.matija@gmail.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=https://github.com/Jinks004/z1_dev224.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+
+Author: Matija Jamnik <jamnik.matija@gmail.com>
+Date:   Tue Oct 27 09:34:28 2026 +0000
+
+    1. Z1 spajanje s Github-om
+
+git log --oneline
+7fd56f4 (HEAD -> main, origin/main) 1. Z1 spajanje s Github-om
+
+* remote origin
+  Fetch URL: https://github.com/Jinks004/z1_dev224.git
+  Push  URL: https://github.com/Jinks004/z1_dev224.git
+  HEAD branch: main
+  Remote branch:
+    main tracked
+  Local ref configured for 'git push':
+    main pushes to main (up to date)
+
+origin  https://github.com/Jinks004/z1_dev224.git (fetch)
+origin  https://github.com/Jinks004/z1_dev224.git (push)
